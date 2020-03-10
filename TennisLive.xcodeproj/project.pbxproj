@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22296C7E2361469F00F04CFF /* RealApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22296C7D2361469F00F04CFF /* RealApiService.swift */; };
+		22296C80236146A400F04CFF /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22296C7F236146A400F04CFF /* Api.swift */; };
+		223EC4E3234EE5430068C943 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EC4E2234EE5430068C943 /* AppDelegate.swift */; };
+		223EC4E9234EE5440068C943 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 223EC4E8234EE5440068C943 /* Assets.xcassets */; };
+		223EC4EF234EE5440068C943 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 223EC4ED234EE5440068C943 /* Main.storyboard */; };
+		223EC4FA234EE5440068C943 /* ResultsTennisLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EC4F9234EE5440068C943 /* ResultsTennisLiveTests.swift */; };
+		223EC505234EE5440068C943 /* TennisLiveUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 223EC504234EE5440068C943 /* TennisLiveUITests.swift */; };
+		224ED1F4236128D300016138 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 224ED1F2236128D300016138 /* Launch Screen.storyboard */; };
+		2250EEBE2367A85200CF2675 /* LiveSummaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250EEBD2367A85200CF2675 /* LiveSummaryTableViewController.swift */; };
+		2250EEC02367A8E500CF2675 /* LiveSummariesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250EEBF2367A8E500CF2675 /* LiveSummariesTableViewCell.swift */; };
+		2250EEC22367B25400CF2675 /* SearchFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250EEC12367B25400CF2675 /* SearchFormViewController.swift */; };
+		2250EEC42367B39F00CF2675 /* SearchResultTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250EEC32367B39F00CF2675 /* SearchResultTableViewController.swift */; };
+		2250EEC62367B3E000CF2675 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2250EEC52367B3E000CF2675 /* SearchTableViewCell.swift */; };
+		22967A582362025800DE20E2 /* Siesta.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224ED1D22361261B00016138 /* Siesta.framework */; };
+		22967A5B2362025C00DE20E2 /* SiestaUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224ED1DA2361261B00016138 /* SiestaUI.framework */; };
+		22A3A875237E414D00FC7ED7 /* SchedulesTennisLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3A874237E414D00FC7ED7 /* SchedulesTennisLiveTests.swift */; };
+		22A3A877237E417C00FC7ED7 /* LiveSummariesTennisLiveTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A3A876237E417C00FC7ED7 /* LiveSummariesTennisLiveTests.swift */; };
+		22A674FC23A485C0000975E4 /* SliderTrackLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A674F223A485C0000975E4 /* SliderTrackLayer.swift */; };
+		22A674FE23A485C7000975E4 /* SliderControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A674FD23A485C7000975E4 /* SliderControl.swift */; };
+		22A6750023A485D0000975E4 /* SliderThumbController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A674FF23A485D0000975E4 /* SliderThumbController.swift */; };
+		22A6750223A4A855000975E4 /* tennislive_reusable_componentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6750123A4A855000975E4 /* tennislive_reusable_componentTests.swift */; };
+		22A6750423A4A861000975E4 /* tennislive_reusable_componentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A6750323A4A861000975E4 /* tennislive_reusable_componentUITests.swift */; };
+		22F89317236292B700220671 /* PlaceholderApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F89316236292B700220671 /* PlaceholderApiService.swift */; };
+		22F8931D23666EB400220671 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8931C23666EB400220671 /* ViewController.swift */; };
+		22F8931F23667FC700220671 /* SearchResultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F8931E23667FC700220671 /* SearchResultTableViewCell.swift */; };
+		F76F73952362111900806438 /* Siesta.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 224ED1D22361261B00016138 /* Siesta.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F76F73982362113300806438 /* SiestaUI.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 224ED1DA2361261B00016138 /* SiestaUI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F76F739E236212E700806438 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76F739D236212E700806438 /* Model.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		223EC4F6234EE5440068C943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223EC4D7234EE5430068C943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223EC4DE234EE5430068C943;
+			remoteInfo = TennisLive;
+		};
+		223EC501234EE5440068C943 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 223EC4D7234EE5430068C943 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 223EC4DE234EE5430068C943;
+			remoteInfo = TennisLive;
+		};
+		224ED1D12361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA336E4F1B2E6DDB006F702A;
+			remoteInfo = "Siesta iOS";
+		};
+		224ED1D32361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F2FB51E1C28645E0068DFFA;
+			remoteInfo = "Siesta macOS";
+		};
+		224ED1D52361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCCAF651E6A313800860D18;
+			remoteInfo = "Siesta watchOS";
+		};
+		224ED1D72361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCCAF721E6A31D900860D18;
+			remoteInfo = "Siesta tvOS";
+		};
+		224ED1D92361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAC0B3AA1D651CB500D25C44;
+			remoteInfo = "SiestaUI iOS";
+		};
+		224ED1DB2361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DAC0B3D61D651CC700D25C44;
+			remoteInfo = "SiestaUI macOS";
+		};
+		224ED1DD2361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA5E4B4B22DCE9670059ED10;
+			remoteInfo = "SiestaUI tvOS";
+		};
+		224ED1DF2361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA336E591B2E6DDB006F702A;
+			remoteInfo = "SiestaTests iOS";
+		};
+		224ED1E12361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9F0FAFAC1D033FCD00CE1B61;
+			remoteInfo = "SiestaTests macOS";
+		};
+		224ED1E32361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDCCAF7A1E6A31DA00860D18;
+			remoteInfo = "SiestaTests tvOS";
+		};
+		224ED1E52361261B00016138 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DA19D06E1D9ADC1800D15F3A;
+			remoteInfo = "SiestaPerformanceTests macOS";
+		};
+		F76F7387236210E800806438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DA336E4E1B2E6DDB006F702A;
+			remoteInfo = "Siesta iOS";
+		};
+		F76F73962362112900806438 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DAC0B37D1D651CB500D25C44;
+			remoteInfo = "SiestaUI iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		22967A5A2362025800DE20E2 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F76F73942362110200806438 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F76F73982362113300806438 /* SiestaUI.framework in CopyFiles */,
+				F76F73952362111900806438 /* Siesta.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		22296C6F236145A900F04CFF /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		22296C7D2361469F00F04CFF /* RealApiService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealApiService.swift; sourceTree = "<group>"; };
+		22296C7F236146A400F04CFF /* Api.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		223EC4DF234EE5430068C943 /* TennisLive.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TennisLive.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		223EC4E2234EE5430068C943 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		223EC4E8234EE5440068C943 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		223EC4EB234EE5440068C943 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		223EC4EE234EE5440068C943 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		223EC4F5234EE5440068C943 /* TennisLiveTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisLiveTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		223EC4F9234EE5440068C943 /* ResultsTennisLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTennisLiveTests.swift; sourceTree = "<group>"; };
+		223EC4FB234EE5440068C943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		223EC500234EE5440068C943 /* TennisLiveUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TennisLiveUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		223EC504234EE5440068C943 /* TennisLiveUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TennisLiveUITests.swift; sourceTree = "<group>"; };
+		223EC506234EE5440068C943 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		224ED1C32361261B00016138 /* Siesta.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Siesta.xcodeproj; path = "Third-Party/Siesta/Siesta.xcodeproj"; sourceTree = "<group>"; };
+		224ED1F3236128D300016138 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "TennisLive/Base.lproj/Launch Screen.storyboard"; sourceTree = "<group>"; };
+		2250EEBD2367A85200CF2675 /* LiveSummaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSummaryTableViewController.swift; sourceTree = "<group>"; };
+		2250EEBF2367A8E500CF2675 /* LiveSummariesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSummariesTableViewCell.swift; sourceTree = "<group>"; };
+		2250EEC12367B25400CF2675 /* SearchFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFormViewController.swift; sourceTree = "<group>"; };
+		2250EEC32367B39F00CF2675 /* SearchResultTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewController.swift; sourceTree = "<group>"; };
+		2250EEC52367B3E000CF2675 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		22A3A874237E414D00FC7ED7 /* SchedulesTennisLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulesTennisLiveTests.swift; sourceTree = "<group>"; };
+		22A3A876237E417C00FC7ED7 /* LiveSummariesTennisLiveTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveSummariesTennisLiveTests.swift; sourceTree = "<group>"; };
+		22A674F223A485C0000975E4 /* SliderTrackLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderTrackLayer.swift; sourceTree = "<group>"; };
+		22A674FD23A485C7000975E4 /* SliderControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderControl.swift; sourceTree = "<group>"; };
+		22A674FF23A485D0000975E4 /* SliderThumbController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SliderThumbController.swift; sourceTree = "<group>"; };
+		22A6750123A4A855000975E4 /* tennislive_reusable_componentTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tennislive_reusable_componentTests.swift; sourceTree = "<group>"; };
+		22A6750323A4A861000975E4 /* tennislive_reusable_componentUITests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = tennislive_reusable_componentUITests.swift; sourceTree = "<group>"; };
+		22F89316236292B700220671 /* PlaceholderApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceholderApiService.swift; sourceTree = "<group>"; };
+		22F8931C23666EB400220671 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = TennisLive/ViewController.swift; sourceTree = "<group>"; };
+		22F8931E23667FC700220671 /* SearchResultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultTableViewCell.swift; sourceTree = "<group>"; };
+		F76F739D236212E700806438 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		223EC4DC234EE5430068C943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22967A582362025800DE20E2 /* Siesta.framework in Frameworks */,
+				22967A5B2362025C00DE20E2 /* SiestaUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223EC4F2234EE5440068C943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223EC4FD234EE5440068C943 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		223EC4D6234EE5430068C943 = {
+			isa = PBXGroup;
+			children = (
+				223EC4E1234EE5430068C943 /* TennisLive */,
+				223EC4F8234EE5440068C943 /* TennisLiveTests */,
+				223EC503234EE5440068C943 /* TennisLiveUITests */,
+				223EC4E0234EE5430068C943 /* Products */,
+				224ED1C32361261B00016138 /* Siesta.xcodeproj */,
+				223EC526234F9F3F0068C943 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		223EC4E0234EE5430068C943 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				223EC4DF234EE5430068C943 /* TennisLive.app */,
+				223EC4F5234EE5440068C943 /* TennisLiveTests.xctest */,
+				223EC500234EE5440068C943 /* TennisLiveUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		223EC4E1234EE5430068C943 /* TennisLive */ = {
+			isa = PBXGroup;
+			children = (
+				223EC4E2234EE5430068C943 /* AppDelegate.swift */,
+				22296C7F236146A400F04CFF /* Api.swift */,
+				F76F739D236212E700806438 /* Model.swift */,
+				22F89316236292B700220671 /* PlaceholderApiService.swift */,
+				22296C7D2361469F00F04CFF /* RealApiService.swift */,
+				2250EEC12367B25400CF2675 /* SearchFormViewController.swift */,
+				2250EEC32367B39F00CF2675 /* SearchResultTableViewController.swift */,
+				2250EEC52367B3E000CF2675 /* SearchTableViewCell.swift */,
+				22F8931C23666EB400220671 /* ViewController.swift */,
+				22F8931E23667FC700220671 /* SearchResultTableViewCell.swift */,
+				2250EEBD2367A85200CF2675 /* LiveSummaryTableViewController.swift */,
+				2250EEBF2367A8E500CF2675 /* LiveSummariesTableViewCell.swift */,
+				22A674F223A485C0000975E4 /* SliderTrackLayer.swift */,
+				22A674FD23A485C7000975E4 /* SliderControl.swift */,
+				22A674FF23A485D0000975E4 /* SliderThumbController.swift */,
+				223EC4ED234EE5440068C943 /* Main.storyboard */,
+				22296C6F236145A900F04CFF /* Info.plist */,
+				223EC4E8234EE5440068C943 /* Assets.xcassets */,
+				224ED1F2236128D300016138 /* Launch Screen.storyboard */,
+				223EC4EA234EE5440068C943 /* Preview Content */,
+			);
+			path = TennisLive;
+			sourceTree = "<group>";
+		};
+		223EC4EA234EE5440068C943 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				223EC4EB234EE5440068C943 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		223EC4F8234EE5440068C943 /* TennisLiveTests */ = {
+			isa = PBXGroup;
+			children = (
+				223EC4F9234EE5440068C943 /* ResultsTennisLiveTests.swift */,
+				22A3A874237E414D00FC7ED7 /* SchedulesTennisLiveTests.swift */,
+				22A3A876237E417C00FC7ED7 /* LiveSummariesTennisLiveTests.swift */,
+				22A6750123A4A855000975E4 /* tennislive_reusable_componentTests.swift */,
+				223EC4FB234EE5440068C943 /* Info.plist */,
+			);
+			path = TennisLiveTests;
+			sourceTree = "<group>";
+		};
+		223EC503234EE5440068C943 /* TennisLiveUITests */ = {
+			isa = PBXGroup;
+			children = (
+				223EC504234EE5440068C943 /* TennisLiveUITests.swift */,
+				22A6750323A4A861000975E4 /* tennislive_reusable_componentUITests.swift */,
+				223EC506234EE5440068C943 /* Info.plist */,
+			);
+			path = TennisLiveUITests;
+			sourceTree = "<group>";
+		};
+		223EC526234F9F3F0068C943 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		224ED1C42361261B00016138 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				224ED1D22361261B00016138 /* Siesta.framework */,
+				224ED1D42361261B00016138 /* Siesta.framework */,
+				224ED1D62361261B00016138 /* Siesta.framework */,
+				224ED1D82361261B00016138 /* Siesta.framework */,
+				224ED1DA2361261B00016138 /* SiestaUI.framework */,
+				224ED1DC2361261B00016138 /* SiestaUI.framework */,
+				224ED1DE2361261B00016138 /* SiestaUI.framework */,
+				224ED1E02361261B00016138 /* SiestaTests.xctest */,
+				224ED1E22361261B00016138 /* SiestaTests.xctest */,
+				224ED1E42361261B00016138 /* SiestaTests.xctest */,
+				224ED1E62361261B00016138 /* SiestaPerformanceTests macOS.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		223EC4DE234EE5430068C943 /* TennisLive */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223EC509234EE5440068C943 /* Build configuration list for PBXNativeTarget "TennisLive" */;
+			buildPhases = (
+				223EC4DB234EE5430068C943 /* Sources */,
+				223EC4DC234EE5430068C943 /* Frameworks */,
+				223EC4DD234EE5430068C943 /* Resources */,
+				22967A5A2362025800DE20E2 /* Embed Frameworks */,
+				F76F73942362110200806438 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F76F73972362112900806438 /* PBXTargetDependency */,
+				F76F7388236210E800806438 /* PBXTargetDependency */,
+			);
+			name = TennisLive;
+			packageProductDependencies = (
+			);
+			productName = TennisLive;
+			productReference = 223EC4DF234EE5430068C943 /* TennisLive.app */;
+			productType = "com.apple.product-type.application";
+		};
+		223EC4F4234EE5440068C943 /* TennisLiveTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223EC50C234EE5440068C943 /* Build configuration list for PBXNativeTarget "TennisLiveTests" */;
+			buildPhases = (
+				223EC4F1234EE5440068C943 /* Sources */,
+				223EC4F2234EE5440068C943 /* Frameworks */,
+				223EC4F3234EE5440068C943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				223EC4F7234EE5440068C943 /* PBXTargetDependency */,
+			);
+			name = TennisLiveTests;
+			productName = TennisLiveTests;
+			productReference = 223EC4F5234EE5440068C943 /* TennisLiveTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		223EC4FF234EE5440068C943 /* TennisLiveUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 223EC50F234EE5440068C943 /* Build configuration list for PBXNativeTarget "TennisLiveUITests" */;
+			buildPhases = (
+				223EC4FC234EE5440068C943 /* Sources */,
+				223EC4FD234EE5440068C943 /* Frameworks */,
+				223EC4FE234EE5440068C943 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				223EC502234EE5440068C943 /* PBXTargetDependency */,
+			);
+			name = TennisLiveUITests;
+			productName = TennisLiveUITests;
+			productReference = 223EC500234EE5440068C943 /* TennisLiveUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		223EC4D7234EE5430068C943 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Lexi Weingardt";
+				TargetAttributes = {
+					223EC4DE234EE5430068C943 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					223EC4F4234EE5440068C943 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 223EC4DE234EE5430068C943;
+					};
+					223EC4FF234EE5440068C943 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 223EC4DE234EE5430068C943;
+					};
+				};
+			};
+			buildConfigurationList = 223EC4DA234EE5430068C943 /* Build configuration list for PBXProject "TennisLive" */;
+			compatibilityVersion = "Xcode 11.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 223EC4D6234EE5430068C943;
+			productRefGroup = 223EC4E0234EE5430068C943 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 224ED1C42361261B00016138 /* Products */;
+					ProjectRef = 224ED1C32361261B00016138 /* Siesta.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				223EC4DE234EE5430068C943 /* TennisLive */,
+				223EC4F4234EE5440068C943 /* TennisLiveTests */,
+				223EC4FF234EE5440068C943 /* TennisLiveUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		224ED1D22361261B00016138 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 224ED1D12361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1D42361261B00016138 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 224ED1D32361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1D62361261B00016138 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 224ED1D52361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1D82361261B00016138 /* Siesta.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Siesta.framework;
+			remoteRef = 224ED1D72361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1DA2361261B00016138 /* SiestaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SiestaUI.framework;
+			remoteRef = 224ED1D92361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1DC2361261B00016138 /* SiestaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SiestaUI.framework;
+			remoteRef = 224ED1DB2361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1DE2361261B00016138 /* SiestaUI.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SiestaUI.framework;
+			remoteRef = 224ED1DD2361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1E02361261B00016138 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = 224ED1DF2361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1E22361261B00016138 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = 224ED1E12361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1E42361261B00016138 /* SiestaTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SiestaTests.xctest;
+			remoteRef = 224ED1E32361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		224ED1E62361261B00016138 /* SiestaPerformanceTests macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SiestaPerformanceTests macOS.xctest";
+			remoteRef = 224ED1E52361261B00016138 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		223EC4DD234EE5430068C943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223EC4EF234EE5440068C943 /* Main.storyboard in Resources */,
+				224ED1F4236128D300016138 /* Launch Screen.storyboard in Resources */,
+				223EC4E9234EE5440068C943 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223EC4F3234EE5440068C943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223EC4FE234EE5440068C943 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		223EC4DB234EE5430068C943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22F8931F23667FC700220671 /* SearchResultTableViewCell.swift in Sources */,
+				22F8931D23666EB400220671 /* ViewController.swift in Sources */,
+				2250EEC22367B25400CF2675 /* SearchFormViewController.swift in Sources */,
+				22296C80236146A400F04CFF /* Api.swift in Sources */,
+				22A674FE23A485C7000975E4 /* SliderControl.swift in Sources */,
+				223EC4E3234EE5430068C943 /* AppDelegate.swift in Sources */,
+				F76F739E236212E700806438 /* Model.swift in Sources */,
+				2250EEC02367A8E500CF2675 /* LiveSummariesTableViewCell.swift in Sources */,
+				22F89317236292B700220671 /* PlaceholderApiService.swift in Sources */,
+				22A674FC23A485C0000975E4 /* SliderTrackLayer.swift in Sources */,
+				2250EEC42367B39F00CF2675 /* SearchResultTableViewController.swift in Sources */,
+				2250EEC62367B3E000CF2675 /* SearchTableViewCell.swift in Sources */,
+				2250EEBE2367A85200CF2675 /* LiveSummaryTableViewController.swift in Sources */,
+				22296C7E2361469F00F04CFF /* RealApiService.swift in Sources */,
+				22A6750023A485D0000975E4 /* SliderThumbController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223EC4F1234EE5440068C943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223EC4FA234EE5440068C943 /* ResultsTennisLiveTests.swift in Sources */,
+				22A3A877237E417C00FC7ED7 /* LiveSummariesTennisLiveTests.swift in Sources */,
+				22A3A875237E414D00FC7ED7 /* SchedulesTennisLiveTests.swift in Sources */,
+				22A6750223A4A855000975E4 /* tennislive_reusable_componentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		223EC4FC234EE5440068C943 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223EC505234EE5440068C943 /* TennisLiveUITests.swift in Sources */,
+				22A6750423A4A861000975E4 /* tennislive_reusable_componentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		223EC4F7234EE5440068C943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 223EC4DE234EE5430068C943 /* TennisLive */;
+			targetProxy = 223EC4F6234EE5440068C943 /* PBXContainerItemProxy */;
+		};
+		223EC502234EE5440068C943 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 223EC4DE234EE5430068C943 /* TennisLive */;
+			targetProxy = 223EC501234EE5440068C943 /* PBXContainerItemProxy */;
+		};
+		F76F7388236210E800806438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Siesta iOS";
+			targetProxy = F76F7387236210E800806438 /* PBXContainerItemProxy */;
+		};
+		F76F73972362112900806438 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "SiestaUI iOS";
+			targetProxy = F76F73962362112900806438 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		223EC4ED234EE5440068C943 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				223EC4EE234EE5440068C943 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		224ED1F2236128D300016138 /* Launch Screen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				224ED1F3236128D300016138 /* Base */,
+			);
+			name = "Launch Screen.storyboard";
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		223EC507234EE5440068C943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		223EC508234EE5440068C943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		223EC50A234EE5440068C943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TennisLive/Preview Content\"";
+				DEVELOPMENT_TEAM = 8LWLHPB3V7;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"($PROJECT_DIR)/Third-Party/Siesta/Build/Mac/\n/**",
+				);
+				INFOPLIST_FILE = TennisLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tennislive.TennisLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		223EC50B234EE5440068C943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"TennisLive/Preview Content\"";
+				DEVELOPMENT_TEAM = 8LWLHPB3V7;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"($PROJECT_DIR)/Third-Party/Siesta/Build/Mac/\n/**",
+				);
+				INFOPLIST_FILE = TennisLive/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tennislive.TennisLive;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		223EC50D234EE5440068C943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LWLHPB3V7;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TennisLiveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tennislive.TennisLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisLive.app/TennisLive";
+			};
+			name = Debug;
+		};
+		223EC50E234EE5440068C943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LWLHPB3V7;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TennisLiveTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tennislive.TennisLiveTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TennisLive.app/TennisLive";
+			};
+			name = Release;
+		};
+		223EC510234EE5440068C943 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LWLHPB3V7;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TennisLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tennislive.TennisLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TennisLive;
+			};
+			name = Debug;
+		};
+		223EC511234EE5440068C943 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8LWLHPB3V7;
+				ENABLE_TESTABILITY = YES;
+				INFOPLIST_FILE = TennisLiveUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = tennislive.TennisLiveUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = TennisLive;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		223EC4DA234EE5430068C943 /* Build configuration list for PBXProject "TennisLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223EC507234EE5440068C943 /* Debug */,
+				223EC508234EE5440068C943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223EC509234EE5440068C943 /* Build configuration list for PBXNativeTarget "TennisLive" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223EC50A234EE5440068C943 /* Debug */,
+				223EC50B234EE5440068C943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223EC50C234EE5440068C943 /* Build configuration list for PBXNativeTarget "TennisLiveTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223EC50D234EE5440068C943 /* Debug */,
+				223EC50E234EE5440068C943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		223EC50F234EE5440068C943 /* Build configuration list for PBXNativeTarget "TennisLiveUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				223EC510234EE5440068C943 /* Debug */,
+				223EC511234EE5440068C943 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 223EC4D7234EE5430068C943 /* Project object */;
+}
